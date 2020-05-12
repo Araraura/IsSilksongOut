@@ -1,0 +1,27 @@
+body {
+    color: #454545;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    margin: 20px;
+    line-height: 25px;
+    text-align: center;
+}
+h1 {
+    color: #C0392B;
+    font-size: 54px;
+    margin: 20px;
+}
+div h2 {
+    font-size: 74px;
+    margin: 25px;
+}
+p {
+    font-size: 18px;
+    text-align: start;
+}
+a:visited {
+    color: #941352;
+}
+a {
+    color: #07A;
+}
