@@ -1,6 +1,6 @@
 body {
     color: #454545;
-    font-family: 'Open Sans', sans-serif;
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
     font-size: 22px;
     margin: 5px;
     text-align: center;
