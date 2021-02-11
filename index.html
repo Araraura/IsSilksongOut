@@ -42,6 +42,30 @@
         </div>
 
         <div>
+            <iframe class="latestVideoEmbed" vnum="0" cid="UC9OmOMZS6rU0_jIdZOxSHxw" width="720" height="405" frameborder="0" allowfullscreen></iframe>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                var reqURL = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('https://www.youtube.com/feeds/videos.xml?channel_id=');
+                
+                function loadVideo(iframe) {
+                    $.getJSON(reqURL + iframe.getAttribute('cid'), function (data) {
+                        var videoNumber = iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0;
+                        console.log(videoNumber);
+                        var link = data.items[videoNumber].link;
+                        id = link.substr(link.indexOf('=') + 1);
+                        iframe.setAttribute('src', 'https://youtube.com/embed/' + id);
+                    });
+                }
+                
+                var iframes = document.getElementsByClassName('latestVideoEmbed');
+                for (var i = 0, len = iframes.length; i < len; i++) {
+                    loadVideo(iframes[i]);
+                }
+                </script>
+            <hr />
+        </div>
+
+        <div>
             <h2>When was the last time we got news?</h2>
             <h2>
                 <a href="https://twitter.com/edgeonline/status/1344588834231693313">December 31st 2020</a>
