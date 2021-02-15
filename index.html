@@ -6,6 +6,7 @@
     <!--November 19 is a lie.-->
     <!--December 13 is a lie.-->
     <!--Indie World is a lie.-->
+
     <head>
         <meta charset="utf-8" />
         <meta name="theme-color" content="#ffffff" />
@@ -13,47 +14,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="No." />
         <link rel="stylesheet" href="style.css" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
     </head>
-
+    
     <body style="color: #454545; font-family: 'Open Sans', sans-serif">
         <div>
             <h2 style="font-size: 74px; margin: 25px">Is Silksong Out?</h2>
             <h1>NO</h1>
             <hr />
         </div>
-        
+
         <div>
             <h2>Do we have a release date?</h2>
             <h1>NO</h1>
             <hr />
         </div>
 
-        <div>
-            <iframe class="latestVideoEmbed" vnum="0" cid="UC9OmOMZS6rU0_jIdZOxSHxw" width="720" height="405" frameborder="0" allowfullscreen></iframe>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script>
-                var reqURL = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('https://www.youtube.com/feeds/videos.xml?channel_id=');
-                
-                function loadVideo(iframe) {
-                    $.getJSON(reqURL + iframe.getAttribute('cid'), function (data) {
-                        var videoNumber = iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0;
-                        console.log(videoNumber);
-                        var link = data.items[videoNumber].link;
-                        id = link.substr(link.indexOf('=') + 1);
-                        iframe.setAttribute('src', 'https://youtube.com/embed/' + id);
-                    });
-                }
-                
-                var iframes = document.getElementsByClassName('latestVideoEmbed');
-                for (var i = 0, len = iframes.length; i < len; i++) {
-                    loadVideo(iframes[i]);
-                }
-                </script>
-            <hr />
-        </div>
+        <main>
+            <div class="latestVideoEmbed">
+                <iframe class="latestVideoEmbed" cid="UC9OmOMZS6rU0_jIdZOxSHxw" width="720" height="405" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </main>
+        <hr />
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
 
         <div>
             <h2>When was the last time we got news?</h2>
@@ -62,14 +47,13 @@
             </h2>
             <hr />
         </div>
-        
+
         <h3>News from other official sources:</h3>
 
         <div>
             <h3>
                 June 15th 2020 - Leth's 1st riddle |
-                <a href="/15_06_2020_Riddle/Riddle.png">Riddle</a> |
-                <a href="/15_06_2020_Riddle/Answer.png">Answer</a> |
+                <a href="/15_06_2020_Riddle/Riddle.png">Riddle</a> | <a href="/15_06_2020_Riddle/Answer.png">Answer</a> |
                 <a href="/15_06_2020_Riddle/code_treasure.7z">.7z File</a>
             </h3>
         </div>
@@ -77,8 +61,7 @@
         <div>
             <h3>
                 June 22nd 2020 - Leth's 2nd riddle |
-                <a href="/22_06_2020_Riddle/Riddle.png">Riddle</a> |
-                <a href="/22_06_2020_Riddle/Answer.png">Answer</a> |
+                <a href="/22_06_2020_Riddle/Riddle.png">Riddle</a> | <a href="/22_06_2020_Riddle/Answer.png">Answer</a> |
                 <a href="/22_06_2020_Riddle/loot.7z">.7z File</a>
             </h3>
         </div>
@@ -86,8 +69,7 @@
         <div>
             <h3>
                 June 29th 2020 - Leth's 3rd riddle |
-                <a href="/29_06_2020_Riddle/Riddle.png">Riddle</a> |
-                <a href="/29_06_2020_Riddle/Answer.png">Answer</a> |
+                <a href="/29_06_2020_Riddle/Riddle.png">Riddle</a> | <a href="/29_06_2020_Riddle/Answer.png">Answer</a> |
                 <a href="/29_06_2020_Riddle/celoot.7z">.7z File</a>
             </h3>
         </div>
@@ -95,12 +77,10 @@
         <div>
             <h3>
                 July 6th 2020 - Leth's 4th riddle |
-                <a href="/06_07_2020_Riddle/Riddle.png">Riddle</a> |
-                <a href="/06_07_2020_Riddle/Answer_1.png">Answer 1</a> |
-                <a href="/06_07_2020_Riddle/Answer_2.png">Answer 2</a> |
+                <a href="/06_07_2020_Riddle/Riddle.png">Riddle</a> | <a href="/06_07_2020_Riddle/Answer_1.png">Answer 1</a> | <a href="/06_07_2020_Riddle/Answer_2.png">Answer 2</a> |
                 <a href="/06_07_2020_Riddle/plip.7z">.7z File</a>
             </h3>
         </div>
-        <p style="font-size: 18px; text-align: start;">Made by <a href="https://twitter.com/Araraura1">Araraura</a></p>
+        <p style="font-size: 18px; text-align: start">Made by <a href="https://twitter.com/Araraura1">Araraura</a></p>
     </body>
 </html>
