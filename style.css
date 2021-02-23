@@ -1,16 +1,23 @@
 body {
-    font-size: 22px;
+    color: #454545;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
     text-align: center;
     margin: 0;
 }
 
-h1 {
-    color: #c0392b;
-    font-size: 54px;
+#title {
+    font-size: 3.3em;
+    margin: 0.3em;
 }
 
-div h3 {
-    margin: 5px;
+.no {
+    color: #c0392b;
+    font-size: 2.5em;
+}
+
+.otherNews {
+    margin: 0.1em;
 }
 
 a {
@@ -37,7 +44,12 @@ a:visited {
 
 main {
     height: auto;
-    max-width: 720px;
+    max-width: 32.142857142857146em;
     margin: 0 auto;
     padding: 1rem;
+}
+
+footer {
+    font-size: 0.8em;
+    text-align: start;
 }
