@@ -1,0 +1,15 @@
+{
+	"name": "Is Silksong Out?",
+	"short_name": "Is SS Out?",
+	"description": "For the people who can't be bothered to look up Silksong news.",
+	"lang": "en",
+	"start_url": "https://issilksongout.com/",
+	"display": "standalone",
+	"background_color": "#fff",
+	"theme_color": "#fff",
+	"icons": [{
+	  "src": "favicon.ico",
+	  "sizes": "16x16",
+	  "type": "image/ico"
+	}]
+  }
