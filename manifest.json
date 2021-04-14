@@ -8,8 +8,8 @@
 	"background_color": "#fff",
 	"theme_color": "#fff",
 	"icons": [{
-	  "src": "favicon.ico",
-	  "sizes": "16x16",
-	  "type": "image/ico"
+	  "src": "apple-touch-icon.png",
+	  "sizes": "192x192",
+	  "type": "image/png"
 	}]
   }
