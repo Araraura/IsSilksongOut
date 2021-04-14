@@ -5,6 +5,7 @@
 	"lang": "en",
 	"start_url": "https://issilksongout.com/",
 	"display": "standalone",
+	"prefer_related_applications": false,
 	"background_color": "#fff",
 	"theme_color": "#fff",
 	"icons": [{
