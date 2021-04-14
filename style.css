@@ -34,7 +34,7 @@ a:visited {
     height: 0;
 }
 
-.latestVideoEmbed iframe {
+iframe[title='YouTube video player'] {
     position: absolute;
     top: 0;
     left: 0;
