@@ -58,6 +58,20 @@ main {
     padding: 1rem;
 }
 
+details {
+    font-family: monospace;
+    text-align: left;
+    max-width: 52.5em;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #eee;
+    box-shadow: 1px 1px 2px #999;
+}
+
+summary {
+    cursor: pointer;
+}
+
 footer {
     font-size: 0.8em;
     text-align: start;
