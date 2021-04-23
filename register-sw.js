@@ -4,7 +4,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 self.addEventListener('install', (event) => {
-    console.log('Inside the install handler:', event);
+    console.log('Inside the UPDATED install handler:', event);
 });
 
 self.addEventListener('activate', (event) => {
