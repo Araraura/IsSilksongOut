@@ -21,15 +21,6 @@
     </head>
 
     <body>
-        <script>
-            // Check that service workers are supported
-            if ('serviceWorker' in navigator) {
-                // Use the window load event to keep the page load performant
-                window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('/service-worker.js');
-                });
-            }
-        </script>
         <header>
             <h1 id="title">Is Silksong Out?</h1>
             <h2 class="no">NO</h2>
