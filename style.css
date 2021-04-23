@@ -72,6 +72,11 @@ summary {
     cursor: pointer;
 }
 
+.otherNews {
+    font-size: 115%;
+    font-weight: bolder;
+}
+
 footer {
     font-size: 0.8em;
     text-align: start;
