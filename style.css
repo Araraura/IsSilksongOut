@@ -23,6 +23,10 @@ body {
     color: #c0392b;
     font-size: 2.4em;
 }
+.unknown {
+    color: #858585;
+    font-size: 2.4em;
+}
 
 .otherNews {
     margin: 0.1em;
