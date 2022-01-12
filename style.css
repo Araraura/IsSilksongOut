@@ -19,12 +19,19 @@ body {
 	margin: 0.3em;
 }
 
+.yes {
+	color: #44e447;
+}
+
 .no {
 	color: #c0392b;
-	font-size: 2.4em;
 }
+
 .unknown {
 	color: #858585;
+}
+
+.yes, .no, .unknown {
 	font-size: 2.4em;
 }
 
