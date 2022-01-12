@@ -1,3 +1,4 @@
+/* Global CSS */
 @font-face {
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
@@ -14,6 +15,15 @@ body {
 	margin: 0;
 }
 
+a {
+	color: #07a;
+}
+
+a:visited {
+	color: #941352;
+}
+
+/* Title and Release Date */
 #title {
 	font-size: 3.3em;
 	margin: 0.3em;
@@ -35,18 +45,7 @@ body {
 	font-size: 2.4em;
 }
 
-.otherNews {
-	margin: 0.1em;
-}
-
-a {
-	color: #07a;
-}
-
-a:visited {
-	color: #941352;
-}
-
+/* YouTube Video Player */
 .latestVideoEmbed {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -70,6 +69,13 @@ main {
 	padding: 1rem;
 }
 
+/* Other News */
+.otherNews {
+	margin: 0.1em;
+	font-size: 115%;
+	font-weight: bolder;
+}
+
 details {
 	font-family: monospace;
 	text-align: left;
@@ -88,11 +94,7 @@ summary {
 	cursor: pointer;
 }
 
-.otherNews {
-	font-size: 115%;
-	font-weight: bolder;
-}
-
+/* Page Footer */
 footer {
 	font-size: 0.8em;
 	text-align: start;
