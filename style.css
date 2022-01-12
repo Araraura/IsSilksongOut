@@ -73,6 +73,10 @@ details {
 	box-shadow: 1px 1px 2px #999;
 }
 
+details > hr {
+	border-top: thin solid #454545;
+}
+
 summary {
 	cursor: pointer;
 }
