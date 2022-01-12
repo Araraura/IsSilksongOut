@@ -53,6 +53,7 @@ iframe[title='YouTube video player'] {
 	width: 100%;
 	height: 100%;
 	padding-bottom: 0;
+	border: none;
 }
 
 main {
