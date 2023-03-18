@@ -15,7 +15,7 @@
 /* Colors (dark theme) */
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-background: #000000;
+		--color-background: #1a1a1a;
 		--color-text: #c4c4c4;
 		--color-yes: #44e447;
 		--color-no: #ef6b5d;
@@ -24,7 +24,7 @@
 		--color-link: #70b5d3;
 		--color-link-visited: #c672e1;
 		--color-details-background: #222;
-		--color-details-shadow: #999;
+		--color-details-shadow: #525252;
 	}
 }
 
