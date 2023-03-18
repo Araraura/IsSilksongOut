@@ -1,3 +1,33 @@
+/* Colors (light theme) */
+:root {
+	--color-background: #ffffff;
+	--color-text: #454545;
+	--color-yes: #44e447;
+	--color-no: #c0392b;
+	--color-kinda: #ebbc00;
+	--color-unknown: #858585;
+	--color-link: #07a;
+	--color-link-visited: #941352;
+	--color-details-background: #eee;
+	--color-details-shadow: #999;
+}
+
+/* Colors (dark theme) */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-background: #1a1a1a;
+		--color-text: #c4c4c4;
+		--color-yes: #44e447;
+		--color-no: #ef6b5d;
+		--color-kinda: #ebbc00;
+		--color-unknown: #808080;
+		--color-link: #70b5d3;
+		--color-link-visited: #c672e1;
+		--color-details-background: #222;
+		--color-details-shadow: #525252;
+	}
+}
+
 /* Global CSS */
 @font-face {
 	font-family: 'Open Sans', sans-serif;
@@ -8,7 +38,8 @@
 }
 
 body {
-	color: #454545;
+	background-color: var(--color-background);
+	color: var(--color-text);
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.4em;
 	text-align: center;
@@ -16,11 +47,11 @@ body {
 }
 
 a {
-	color: #07a;
+	color: var(--color-link);
 }
 
 a:visited {
-	color: #941352;
+	color: var(--color-link-visited);
 }
 
 /* Title and Release Date */
@@ -30,15 +61,19 @@ a:visited {
 }
 
 .yes {
-	color: #44e447;
+	color: var(--color-yes);
 }
 
 .no {
-	color: #c0392b;
+	color: var(--color-no);
+}
+
+.kinda {
+    color: var(--color-kinda);
 }
 
 .unknown {
-	color: #858585;
+	color: var(--color-unknown);
 }
 
 .yes, .no, .unknown {
@@ -82,8 +117,8 @@ details {
 	max-width: 52.5em;
 	margin: 1rem auto;
 	padding: 1rem;
-	background-color: #eee;
-	box-shadow: 1px 1px 2px #999;
+	background-color: var(--color-details-background);
+	box-shadow: 1px 1px 2px var(--color-details-shadow);
 }
 
 details > p {
@@ -91,7 +126,7 @@ details > p {
 }
 
 details > hr {
-	border-top: thin solid #454545;
+	border-top: thin solid var(--color-text);
 }
 
 summary {
