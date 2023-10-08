@@ -1,0 +1,147 @@
+/* Colors (light theme) */
+
+:root {
+  --color-background: #ffffff;
+  --color-text: #454545;
+  --color-yes: #44e447;
+  --color-no: #c0392b;
+  --color-kinda: #ebbc00;
+  --color-unknown: #858585;
+  --color-link: #07a;
+  --color-link-visited: #941352;
+  --color-details-background: #eee;
+  --color-details-shadow: #999;
+}
+
+/* Colors (dark theme) */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #1a1a1a;
+    --color-text: #c4c4c4;
+    --color-yes: #44e447;
+    --color-no: #fb0103;
+    --color-kinda: #ebbc00;
+    --color-unknown: #808080;
+    --color-link: #e33e4e;
+    --color-link-visited: #e17558;
+    --color-details-background: rgba(0,0,0,0.5);
+    --color-details-shadow: #525252;
+  }
+}
+
+/* Global CSS */
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  color: var(--color-link);
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+/* Title and Release Date */
+
+#title {
+  font-size: 3.3em;
+  margin: 0.3em;
+}
+
+.yes {
+  color: var(--color-yes);
+}
+
+.no {
+  color: var(--color-no);
+}
+
+.kinda {
+  color: var(--color-kinda);
+}
+
+.unknown {
+  color: var(--color-unknown);
+}
+
+.yes, .no, .unknown {
+  font-size: 2.4em;
+}
+
+/* YouTube Video Player */
+
+.latestVideoEmbed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+iframe[title='YouTube video player'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0;
+  border: none;
+}
+
+main {
+  height: auto;
+  max-width: 32.142857142857146em;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Other News */
+
+.otherNews {
+  margin: 0.1em;
+  font-size: 115%;
+  font-weight: bolder;
+}
+
+details {
+  font-family: monospace;
+  text-align: left;
+  max-width: 52.5em;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: var(--color-details-background);
+  border-radius: 10px;
+}
+
+details > p {
+  line-height: 1.3;
+}
+
+details > hr {
+  border-top: thin solid var(--color-text);
+}
+
+summary {
+  cursor: pointer;
+}
+
+/* Page Footer */
+
+footer {
+  font-size: 0.8em;
+  text-align: start;
+}
+
+.transparentbox {
+  margin: auto;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  max-width: 1000px;
+}
+
