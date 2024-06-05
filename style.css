@@ -15,7 +15,7 @@
 /* Colors (dark theme) */
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-background: #1a1a1a;
+		--color-background: #111111;
 		--color-text: #c4c4c4;
 		--color-yes: #44e447;
 		--color-no: #ef6b5d;
@@ -54,6 +54,13 @@ a:visited {
 	color: var(--color-link-visited);
 }
 
+hr {
+	margin: 1rem 20%;
+	background: linear-gradient(90deg, transparent 0%, gray 50%, transparent 100%);
+	border: none;
+	height: 2px;
+}
+
 /* Title and Release Date */
 #title {
 	font-size: 3.3em;
@@ -62,22 +69,34 @@ a:visited {
 
 .yes {
 	color: var(--color-yes);
+	text-shadow: 0 0 3rem color-mix(in srgb, var(--color-yes) 70%, transparent);
 }
 
 .no {
 	color: var(--color-no);
+	text-shadow: 0 0 3rem color-mix(in srgb, var(--color-no) 70%, transparent);
 }
 
 .kinda {
     color: var(--color-kinda);
+	text-shadow: 0 0 3rem color-mix(in srgb, var(--color-kinda) 70%, transparent);
 }
 
 .unknown {
 	color: var(--color-unknown);
+	text-shadow: 0 0 3rem color-mix(in srgb, var(--color-unknown) 70%, transparent);
 }
 
-.yes, .no, .unknown {
+.yes, .no {
 	font-size: 2.4em;
+}
+
+.unknown, .kinda {
+	font-size: 2em;
+}
+
+.yes, .no, .unknown, .kinda {
+	font-family: 'Georgia', 'Open Sans', sans-serif;
 }
 
 /* YouTube Video Player */
@@ -136,5 +155,7 @@ summary {
 /* Page Footer */
 footer {
 	font-size: 0.8em;
-	text-align: start;
+	text-align: center;
+	margin: 2rem;
+	padding: 2rem 0;
 }
