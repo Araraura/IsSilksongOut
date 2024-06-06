@@ -69,22 +69,18 @@ hr {
 
 .yes {
 	color: var(--color-yes);
-	text-shadow: 0 0 3rem color-mix(in srgb, var(--color-yes) 70%, transparent);
 }
 
 .no {
 	color: var(--color-no);
-	text-shadow: 0 0 3rem color-mix(in srgb, var(--color-no) 70%, transparent);
 }
 
 .kinda {
     color: var(--color-kinda);
-	text-shadow: 0 0 3rem color-mix(in srgb, var(--color-kinda) 70%, transparent);
 }
 
 .unknown {
 	color: var(--color-unknown);
-	text-shadow: 0 0 3rem color-mix(in srgb, var(--color-unknown) 70%, transparent);
 }
 
 .yes, .no {
@@ -97,6 +93,7 @@ hr {
 
 .yes, .no, .unknown, .kinda {
 	font-family: 'Georgia', 'Open Sans', sans-serif;
+	text-shadow: 0 0 3rem color-mix(in srgb, currentcolor 70%, transparent);
 }
 
 /* YouTube Video Player */
