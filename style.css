@@ -93,7 +93,7 @@ hr {
 
 .yes, .no, .unknown, .kinda {
 	font-family: 'Georgia', 'Open Sans', sans-serif;
-	text-shadow: 0 0 3rem color-mix(in srgb, currentcolor 70%, transparent);
+	text-shadow: 0 0 1.5rem color-mix(in srgb, currentcolor 35%, transparent);
 }
 
 /* YouTube Video Player */
