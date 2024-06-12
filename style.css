@@ -54,7 +54,7 @@ a:visited {
 	color: var(--color-link-visited);
 }
 
-hr {
+body > hr {
 	margin: 1rem 20%;
 	background: linear-gradient(90deg, transparent 0%, gray 50%, transparent 100%);
 	border: none;
