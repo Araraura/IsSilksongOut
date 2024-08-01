@@ -111,6 +111,7 @@ iframe[title='YouTube video player'] {
 	height: 100%;
 	padding-bottom: 0;
 	border: none;
+	border-radius: 0.75rem;
 }
 
 main {
@@ -135,6 +136,7 @@ details {
 	padding: 1rem;
 	background-color: var(--color-details-background);
 	box-shadow: 1px 1px 2px var(--color-details-shadow);
+	border-radius: 0.75rem;
 }
 
 details > p {
