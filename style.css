@@ -132,6 +132,7 @@ details {
 	font-family: monospace;
 	text-align: left;
 	max-width: 52.5em;
+	width: 85%;
 	margin: 1rem auto;
 	padding: 1rem;
 	background-color: var(--color-details-background);
